@@ -1,314 +1,90 @@
-@charset "utf-8";
-/* CSS Document */
-* {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        outline: 0;
-        font-size: 100%;
-        vertical-align: baseline;
-        background: transparent;
-    }
-
-html {
-    overflow-y:scroll;
+body{  
+	font: 15px/1.5 Arial, Helvetive, sans-serif; 
+	padding: 0; 
+	margin:0; 
+	background-color: #f4f4f4; 
 }
 
-header {
-	height: 64px;
-	width: 100%;/*468*/
-	background-color: #0E237F;
-	margin:auto;
-	min-width: 960px;
+.container{
+	width:100%; 
+	margin:auto; 
+	overflow:hidden; 
 }
 
-header img {
-	top: 5px;
-	left: 20px;
-	position: relative;
+/*header*/
+header{
+	background:#35424a;  
+	color: #ffffff; 
+	padding-top:30px; 
+	min-height:70px; 
+	border-bottom:#e8491d 3px solid; 
+}
+
+header a{ 
+
+	color:#ffffff; 
+	text-transform: uppercase; 
+	text-decoration: none; 
+	font-size: 16px; 
 	
 }
 
-header::after {
-	content:'';
-	display: table;
-	clear:both;
+/*Global un-ordered lists*/
+ul{
+	margin:0; 
+	padding:0; 
+} 
+
+header li{
+	float:left; 
+	display:inline; 
+	padding: 0 20px 0 20px;
 }
 
-#nav {
-	
-	float:right;
-	position: relative;
-	left:-50px;
+header #branding{
+	float:left; 
 }
 
-#nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+header #branding h1{
+	margin:0; 
 }
 
-#nav li {
-	display: inline-block;
-	margin-left:50px;
-	padding-top: 25px;
+header nav{
+	float:right; 
+	margin-top:10px; 
 }
 
-#logo {
-	float:left;
+header .highlight, header .current a{
+	color:#e8491d; 
+	font-weight:bold; 
+} 
+
+header a:hover{
+	color:#cccccc; 
+	font-weight:bold; 
+} 
+
+footer {
+	margin-top: 20px; 
+	padding-bottom:20px; 
+	background-color:#e8491d; 
+	text-align:center; 
+	color:#ffffff; 
+} 
+
+#showcase{ 
+	min-height:400px; 
+	background:url('apartment.png') no repeat 0 -400px; 
+	color:#ffffff; 
+	text-align:center; 
 }
 
-
-#nav li a {
-	text-decoration: none;
-	color:#ffffff;
-	
+#showcase h1{
+	margin-top:100px; 
+	font-size:55px; 
+	margin-bottom:10px; 
 }
 
-#nav li a:visited {
-	text-decoration: none;
+#showcase p{
+	font-size:20px;
 }
-
-
-.active{
-	
-}
-
-
-#content {
-	/*width:960px;*/
-	width: 100%;
-	margin: auto;
-	 /*box-shadow: 0px 0px 10px grey;*/
-	padding-bottom: 50px;
-	/*top: 25px;*/
-	position: relative;
-	min-width: 960px;
-	/*maybe remove minwidth later*/
-	
-}
-
-#content * {
-	padding: 0px 10px;
-}
-
-
-/*----------begin home page CSS----------*/
-
-
-#banner {
-	height:200px;
-	width: 100%;
-	margin:auto;
-	position: relative;
-	background-color:red;
-	min-width: 960px;
-	background-image: url(pictures/bannerPrototype.png);
-		
-	
-}
-
-
-
-#introduction {/*
-	padding-top: 30px;
-	padding-bottom: 30px;*/
-	background-color:#D9D9D9;
-	padding: 75px 175px 100px 175px;
-	text-align: justify;
-	
-}
-
-
-#introduction img {
-	float: right;
-	padding-left: 20px;
-}
-
-
-h3.heading {
-	font-size: 36px;
-}
-
-
-
-
-h3 {
-	text-align: center;
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-}
-#courseSelection {
-	z-index: 5;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	position: relative;
-	 box-shadow: 0px 0px 10px grey;
-}
-
-#advertisment img{
-	float: left;
-}
-
-#advertisment {
-	z-index: 1;
-	background-color: #D9D9D9;
-	height: 200px;
-	padding-bottom: 200px;
-	width: 100%;
-	padding-top: 30px;
-}
-
-#advertisment table{
-	border-spacing: 50px;
-}
-
-#advertiesment table td{
-	padding: 50px;
-}
-
-
-#perSemester {
-	width: 200px;
-	height: 200px;
-	background-image: url(#);
-	background-color:aliceblue;
-	transition: background-color .5s;
-	/*will become background-image later*/
-}
-
-#perSemester:hover{
-	background-color:transparent;
-	
-}
-
-#perWeek {
-	width: 200px;
-	height: 200px;
-	background-color:aliceblue;
-	background-image: url(#);
-	transition: background-color .5s;
-	/*will become background-image later*/
-}
-
-#perWeek:hover{
-	background-color:transparent;
-}
-
-
-
-
-#howItWorks h3 {
-	padding: 10px;
-	padding-bottom:40px;
-	
-}
-
-#howItWorks{
-	padding-top:75px;
-	padding-bottom:75px;
-	/*background-color: #FFFEE3;*/
-	background-color:#D9D9D9;
-}
-
-#howItWorks ol {
-	width: 600px;
-	margin:auto;
-	
-}
-
-#howItWorks li {
-	padding: 20px;
-}
-
-
-
-
-#howItWorksImg {
-	width:960px;
-	margin:auto;
-}
-
-
-
-
-#footer h3{
-	text-align: left;
-}
-
-#footer {
-	padding: 50px;
-	top: 50px;
-	position:relative;
-	background-color: #0E237F;
-	width: 100%;
-	height:200px;
-	margin:auto;
-	color: #ffffff;
-	min-width: 960px;
-	
-}
-
-
-
-
-
-/*--------------- Begin Course Selection CSS ----------------*/
-
-
-
-
-.pageHeading {
-	font-size: 24px;
-
-	
-}
-
-
-.pageContent {
-
-	width: 100%;
-	margin: auto;
-	padding-bottom: 50px;
-	position: relative;
-	min-width: 960px;
-	
-	paddign-top:50px;
-	top:30px;
-}
-
-
-.pageContent * {
-	padding: 0px 10px;
-}
-
-#contentCourseSelection table{
-	padding: 50px;
-}
-
-#contentCourseSelection td {
-	width:200px;
-	height:200px;
-	background-color: aliceblue;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
