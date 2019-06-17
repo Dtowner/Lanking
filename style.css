@@ -14,7 +14,7 @@ body{
 /*header*/
 header{
 	background:#35424a;  
-	color: #ffffff; 
+	color: #000000;
 	padding-top:30px; 
 	min-height:70px; 
 	border-bottom:#e8491d 3px solid; 
