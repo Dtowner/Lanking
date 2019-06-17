@@ -42,7 +42,7 @@ header li{
 }
 
 header #branding{
-	float:left; 
+	float:left;
 }
 
 header #branding h1{
@@ -74,7 +74,7 @@ footer {
 
 #showcase{ 
 	min-height:400px; 
-	background:url('apartment.png') no repeat 0 -400px; 
+	background-image: url("apartment.png") no repeat ;      
 	color:#ffffff; 
 	text-align:center; 
 }
