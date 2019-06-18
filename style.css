@@ -9,12 +9,13 @@ body{
 	width:100%; 
 	margin:auto; 
 	overflow:hidden; 
+	color: #000000; 
 }
 
 /*header*/
 header{
 	background:#35424a;  
-	color: #000000;
+	color: #ffffff;
 	padding-top:30px; 
 	min-height:70px; 
 	border-bottom:#e8491d 3px solid; 
@@ -22,7 +23,7 @@ header{
 
 header a{ 
 
-	color:#ffffff; 
+	color:#ffffff;
 	text-transform: uppercase; 
 	text-decoration: none; 
 	font-size: 16px; 
@@ -87,4 +88,10 @@ footer {
 
 #showcase p{
 	font-size:20px;
+}
+
+#Search {
+	min-height:400px;       
+	color:#ffffff; 
+	text-align:center; 
 }
