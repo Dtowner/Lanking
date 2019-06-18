@@ -89,3 +89,9 @@ footer {
 #showcase p{
 	font-size:20px;
 }
+
+#Search {
+	min-height:400px;       
+	color:#ffffff; 
+	text-align:center; 
+}
