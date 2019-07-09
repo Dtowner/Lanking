@@ -19,6 +19,15 @@
 	$Email = mysqli_real_escape_string($conn, $_POST['email']);
 	$Password = mysqli_real_escape_string($conn, $_POST['password']);
 		
+		
+		if(empty($First) || empty($Last) || empty($Email) || empty($Password))
+		{
+			ob_flush();
+			header("Location: accountCreateFail.html");
+			ob_end_flush();
+			die();
+		}
+		
 	$sql = "INSERT INTO Accounts (First_Name, Last_Name, Email, Password) VALUES ('$First', '$Last', '$Email', '$Password')";
 
 	if ($conn->query($sql) === TRUE) 
@@ -32,7 +41,7 @@
 	$conn->close();
 	
 	ob_flush();
-	header("Location: login.html");
+	header("Location: account.html");
 	ob_end_flush();
 	die();
 ?>
