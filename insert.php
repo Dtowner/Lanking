@@ -41,7 +41,11 @@
 	$conn->close();
 	
 	ob_flush();
+<<<<<<< HEAD
 	header("Location: account.html");
+=======
+	header("Location:account.html");
+>>>>>>> 0629699d36bee47819dfc3fb5aa6759622ef4c1d
 	ob_end_flush();
 	die();
 ?>
