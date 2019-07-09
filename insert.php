@@ -32,7 +32,7 @@
 	$conn->close();
 	
 	ob_flush();
-	header("Location: login.html");
+	header("Location:account.html");
 	ob_end_flush();
 	die();
 ?>
