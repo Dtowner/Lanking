@@ -35,6 +35,4 @@
 	header("Location: login.html");
 	ob_end_flush();
 	die();
-	
-	
 ?>
