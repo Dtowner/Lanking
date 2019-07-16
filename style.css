@@ -96,6 +96,8 @@ footer {
 	text-align:center;
 }
 
+
+/* This is for the login modal*/
 .modal {
 	display: none;
 	position: fixed;
@@ -118,7 +120,6 @@ footer {
 	width: 80%;
 
 }
-
 .close {
 position: absolute;
 right: 25px;
@@ -134,3 +135,6 @@ font-weight: bold;
 	color: red;
 	cursor: pointer;
 }
+
+
+/* This is for the Sign up modal*/
