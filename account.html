@@ -4,13 +4,14 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name='viewport' content='width=device-width'> 
-		<title>Lanking | Home</title>
+		<title>Lanking | Account</title>
 		<link href="style.css" rel="stylesheet" type="text/css">
+		
 	</head>
 	
 	<body>
 	
-			<header> 
+		<header> 
 			<div class='container'> 
 				<div id='branding'>
 					<h2 class='highlight'>Lanking</h2>
@@ -20,14 +21,13 @@
 						<li><a href='index.html' >Home</a></li>
 						<li><a href='description.html' >Description</a></li>
 						<li><a href='search.html' >Search</a></li>
-						<li><a href='login.html' >Login</a></li>
 						<li><a href='account.html'>Accounts</a></li>
 					</ul>
 				</nav>
 			</div> 
 		</header> 
-	
-
+		
+		<h2>Create Account</h2>
 		<form action="insert.php" method="POST">
 			First Name : <input type="text" name="first_name">
 			<br/>
@@ -36,8 +36,21 @@
 			Email : <input type="text" name="email">
 			<br/>
 			Password : <input type="text" name="password">
-			<input type="submit" value="Insert">
+			<input type="submit" value="Create">
 		</form>
 		
-	</body> 
-</html>
+		<br/>
+		
+		<h2>Login</h2>
+		<form action="retrieve.php" method="GET">
+			Email : <input type="text" name="email">
+			<br/>
+			Password : <input type="text" name="password">
+			<input type="submit" value="Login">
+		</form>
+	</body>
+	
+	<footer> 
+			<p> &copy; 2019 by Lanking &ensp; <a href='termsConditions.html'>Terms and Conditions</a></p>
+	</footer> 	
+	</html>
