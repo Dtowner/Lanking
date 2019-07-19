@@ -1,44 +1,44 @@
-body{
-	font: 15px/1.5 Arial, Helvetive, sans-serif;
-	padding: 0;
-	margin:0;
-	background-color: #f4f4f4;
+body{  
+	font: 15px/1.5 Arial, Helvetive, sans-serif; 
+	padding: 0; 
+	margin:0; 
+	background-color: #f4f4f4; 
 }
 
 .container{
-	width:100%;
-	margin:auto;
-	overflow:hidden;
-	color: #000000;
+	width:100%; 
+	margin:auto; 
+	overflow:hidden; 
+	color: #000000; 
 }
 
 /*header*/
 header{
-	background:#35424a;
+	background:#35424a;  
 	color: #ffffff;
-	padding-top:30px;
-	min-height:70px;
-	border-bottom:#e8491d 3px solid;
+	padding-top:30px; 
+	min-height:70px; 
+	border-bottom:#e8491d 3px solid; 
 }
 
-header a{
+header a{ 
 
 	color:#ffffff;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-size: 16px;
-
+	text-transform: uppercase; 
+	text-decoration: none; 
+	font-size: 16px; 
+	
 }
 
 /*Global un-ordered lists*/
 ul{
-	margin:0;
-	padding:0;
-}
+	margin:0; 
+	padding:0; 
+} 
 
 header li{
-	float:left;
-	display:inline;
+	float:left; 
+	display:inline; 
 	padding: 0 20px 0 20px;
 }
 
@@ -47,25 +47,26 @@ header #branding{
 }
 
 header #branding h1{
-	margin:0;
+	margin:0; 
 }
 
 header nav{
-	float:right;
-	margin-top:10px;
+	float:right; 
+	margin-top:10px; 
 }
 
 header .highlight, header .current a{
-	color:#e8491d;
-	font-weight:bold;
-}
+	color:#e8491d; 
+	font-weight:bold; 
+} 
 
 header a:hover{
-	color:#cccccc;
-	font-weight:bold;
-}
+	color:#cccccc; 
+	font-weight:bold; 
+} 
 
 footer {
+<<<<<<< HEAD
 	margin-top: 20px;
 	bottom: 0; 
 	padding-bottom:20px;
@@ -85,12 +86,19 @@ footer {
 	color:#ffffff;
 	text-align:center;
 	padding: 50px; 
+
+
+#showcase{ 
+	min-height:400px; 
+	background-image: url("apartment.png") no repeat ;      
+	color:#000000; 
+	text-align:center; 
 }
 
 #showcase h1{
-	margin-top:100px;
-	font-size:55px;
-	margin-bottom:10px;
+	margin-top:100px; 
+	font-size:55px; 
+	margin-bottom:10px; 
 }
 
 #showcase p{
@@ -98,46 +106,7 @@ footer {
 }
 
 #Search {
-	min-height:400px;
-	color:#ffffff;
-	text-align:center;
-}
-
-.modal {
-	display: none;
-	position: fixed;
-	z-index: 1;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	background-color: rgb(0,0,0);
-	background-color: rgba(0,0,0,0.4);
-	padding-top: 60px;
-
-}
-
-.modal-content {
-	background-color: #fefefe;
-	margin: 5px auto;
-	border: 1px solid #888;
-	width: 80%;
-
-}
-
-.close {
-position: absolute;
-right: 25px;
-top: 0;
-color: #000;
-font-size: 35px;
-font-weight: bold;
-
-}
-
-.clsoe:hover,
-.close:focus{
-	color: red;
-	cursor: pointer;
+	min-height:400px;       
+	color:#ffffff; 
+	text-align:center; 
 }

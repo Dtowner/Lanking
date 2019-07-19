@@ -1,5 +1,4 @@
 <?php
-
 	$servername = "localhost";
 	$username = "root";
 	$password = "root";
@@ -14,21 +13,40 @@
 		die("Connection failed: " . $conn->connect_error);
 	} 
 
-	$First = mysqli_real_escape_string($conn, $_POST['first_name']);
-	$Last = mysqli_real_escape_string($conn, $_POST['last_name']);
 	$Email = mysqli_real_escape_string($conn, $_POST['email']);
 	$Password = mysqli_real_escape_string($conn, $_POST['password']);
 		
-		
-		if(empty($First) || empty($Last) || empty($Email) || empty($Password))
+	// $sql = 'SELECT password FROM lanking_test WHERE email = $Email';
+	$sql = "SELECT password FROM accounts WHERE email = $Email";
+	$result = mysqli_query($conn,$sql);
+	
+		if($result == $Password)
 		{
 			ob_flush();
-			header("Location: accountCreateFail.html");
+			header("Location: description.html");
 			ob_end_flush();
 			die();
 		}
+		else
+		{
+			ob_flush();
+			header("Location: search.html");
+			ob_end_flush();
+			die();
+		}
+		if(empty($Email) || empty($Password))
+		{
+			ob_flush();
+			header("Location: loginFail.html");
+			ob_end_flush();
+			die();
+		}
+		/* else if( )
+		{
+			// Find corresponding id to email and check if password is correct
+		} */
 		
-	$sql = "INSERT INTO Accounts (First_Name, Last_Name, Email, Password) VALUES ('$First', '$Last', '$Email', '$Password')";
+	
 
 	if ($conn->query($sql) === TRUE) 
 	{
@@ -43,5 +61,5 @@
 	ob_flush();
 	header("Location: account.html");
 	ob_end_flush();
-	die();
+	die();  
 ?>

@@ -1,16 +1,13 @@
-<!doctype html>
-<html>
-
-	<head>
+<!doctype> 
+<html> 
+	<head> 
+		<title> Lanking | Login</title>  
 		<meta charset="utf-8">
 		<meta name='viewport' content='width=device-width'> 
-		<title>Lanking | Account</title>
 		<link href="style.css" rel="stylesheet" type="text/css">
+	</head> 
 		
-	</head>
-	
-	<body>
-	
+	<body> 
 		<header> 
 			<div class='container'> 
 				<div id='branding'>
@@ -25,32 +22,22 @@
 					</ul>
 				</nav>
 			</div> 
-		</header> 
-		
-		<h2>Create Account</h2>
-		<form action="insert.php" method="POST">
-			First Name : <input type="text" name="first_name">
-			<br/>
-			Last Name : <input type="text" name="last_name">
-			<br/>
-			Email : <input type="text" name="email">
-			<br/>
-			Password : <input type="text" name="password">
-			<input type="submit" value="Create">
-		</form>
-		
-		<br/>
-		
-		<h2>Login</h2>
+		</header>
+
+		<div class='container'>
+			<h3>Login</h3> 
+		</div>
+			
+		<p><h3>*** All fields are required ***</h3></p>
 		<form action="retrieve.php" method="GET">
 			Email : <input type="text" name="email">
 			<br/>
 			Password : <input type="text" name="password">
 			<input type="submit" value="Login">
 		</form>
-	</body>
-	
+	</body> 
+
 	<footer> 
 			<p> &copy; 2019 by Lanking &ensp; <a href='termsConditions.html'>Terms and Conditions</a></p>
-	</footer> 	
-	</html>
+	</footer> 
+</html> 
