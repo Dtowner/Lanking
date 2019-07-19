@@ -66,12 +66,26 @@ header a:hover{
 } 
 
 footer {
-	margin-top: 20px; 
-	padding-bottom:20px; 
-	background-color:#e8491d; 
-	text-align:center; 
-	color:#ffffff; 
-} 
+	margin-top: 20px;
+	bottom: 0; 
+	padding-bottom:20px;
+	background-color:#e8491d;
+	text-align:center;
+	color:#ffffff;
+}
+
+
+
+#showcase{
+	min-height:400px;
+	background-image:url("../Lanking2.PNG");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-attachment: scroll; 
+	color:#ffffff;
+	text-align:center;
+	padding: 50px; 
+}
 
 #showcase{ 
 	min-height:400px; 
