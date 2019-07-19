@@ -27,13 +27,16 @@
 			$row = mysqli_fetch_array($result);
 			$resPass = $row['password'];
 			
-			if($resPass == $Password)
+			$pass1 = (string)$resPass;
+			$pass2 = (String)$Password;
+			
+			if($pass1 == $pass2)
 			{
 				die("Success: Correct Password");
 			}
 			else
 			{
-				die("Fail");
+				die("Fail : " . $pass2 . $pass2);
 			}  
 
 	
